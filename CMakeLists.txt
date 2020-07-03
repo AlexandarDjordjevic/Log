@@ -4,15 +4,8 @@ set (this Log)
 
 project(${this})
 
-set (src 
-    src/Log.cpp 
-    main.cpp
-)
+set (CMAKE_CXX_STANDARD 11)
 
-set (inc 
-    include/Log.hpp
-)
-
-add_executable(${this} ${src} ${inc})
+add_executable(${this} main.cpp)
 
 target_include_directories(${this} PUBLIC include)

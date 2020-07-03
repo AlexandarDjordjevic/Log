@@ -1,8 +1,8 @@
 #include "Log.hpp"
 
 int main(){
-    Log::error("This is error message!");
-    Log::info("This is info message!");
-    Log::warning("This is warnign message!");
+    Log::error << "This is error" << endl;
+    Log::warning << "This is warning" << endl;
+    Log::info << "This is info " << 1.5 << 4 << true << endl;
     return 0;
 }
